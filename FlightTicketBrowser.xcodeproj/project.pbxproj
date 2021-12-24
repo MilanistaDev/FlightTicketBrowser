@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD5F35742774EDAD00BBEA2E /* TicketList.json in Resources */ = {isa = PBXBuildFile; fileRef = FD5F35732774EDAD00BBEA2E /* TicketList.json */; };
 		FD930CDE27736183000BA4CF /* FlightTicketBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */; };
 		FD930CE027736183000BA4CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD930CDF27736183000BA4CF /* ContentView.swift */; };
 		FD930CE227736185000BA4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE127736185000BA4CF /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD5F35732774EDAD00BBEA2E /* TicketList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TicketList.json; sourceTree = "<group>"; };
 		FD930CDA27736183000BA4CF /* FlightTicketBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTicketBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketBrowserApp.swift; sourceTree = "<group>"; };
 		FD930CDF27736183000BA4CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD5F35722774ED8000BBEA2E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FD5F35732774EDAD00BBEA2E /* TicketList.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		FD930CD127736183000BA4CF = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 			children = (
 				FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */,
 				FD930CDF27736183000BA4CF /* ContentView.swift */,
+				FD5F35722774ED8000BBEA2E /* Data */,
 				FD930CE127736185000BA4CF /* Assets.xcassets */,
 				FD930CE327736185000BA4CF /* Preview Content */,
 			);
@@ -127,6 +138,7 @@
 			files = (
 				FD930CE527736185000BA4CF /* Preview Assets.xcassets in Resources */,
 				FD930CE227736185000BA4CF /* Assets.xcassets in Resources */,
+				FD5F35742774EDAD00BBEA2E /* TicketList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
