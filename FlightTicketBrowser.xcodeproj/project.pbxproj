@@ -10,8 +10,9 @@
 		FD5F35742774EDAD00BBEA2E /* TicketList.json in Resources */ = {isa = PBXBuildFile; fileRef = FD5F35732774EDAD00BBEA2E /* TicketList.json */; };
 		FD5F357727774B1200BBEA2E /* TicketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F357627774B1200BBEA2E /* TicketList.swift */; };
 		FD5F357927774C0900BBEA2E /* TicketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F357827774C0900BBEA2E /* TicketInfo.swift */; };
+		FD5F357C2778A22400BBEA2E /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F357B2778A22400BBEA2E /* TicketListView.swift */; };
+		FD5F357E2778A25600BBEA2E /* TicketListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F357D2778A25600BBEA2E /* TicketListRowView.swift */; };
 		FD930CDE27736183000BA4CF /* FlightTicketBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */; };
-		FD930CE027736183000BA4CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD930CDF27736183000BA4CF /* ContentView.swift */; };
 		FD930CE227736185000BA4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE127736185000BA4CF /* Assets.xcassets */; };
 		FD930CE527736185000BA4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE427736185000BA4CF /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -20,9 +21,10 @@
 		FD5F35732774EDAD00BBEA2E /* TicketList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TicketList.json; sourceTree = "<group>"; };
 		FD5F357627774B1200BBEA2E /* TicketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketList.swift; sourceTree = "<group>"; };
 		FD5F357827774C0900BBEA2E /* TicketInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfo.swift; sourceTree = "<group>"; };
+		FD5F357B2778A22400BBEA2E /* TicketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListView.swift; sourceTree = "<group>"; };
+		FD5F357D2778A25600BBEA2E /* TicketListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListRowView.swift; sourceTree = "<group>"; };
 		FD930CDA27736183000BA4CF /* FlightTicketBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTicketBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketBrowserApp.swift; sourceTree = "<group>"; };
-		FD930CDF27736183000BA4CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD930CE127736185000BA4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD930CE427736185000BA4CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +57,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FD5F357A2778A1FA00BBEA2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD5F357B2778A22400BBEA2E /* TicketListView.swift */,
+				FD5F357D2778A25600BBEA2E /* TicketListRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FD930CD127736183000BA4CF = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */,
-				FD930CDF27736183000BA4CF /* ContentView.swift */,
+				FD5F357A2778A1FA00BBEA2E /* View */,
 				FD5F357527774AE200BBEA2E /* Model */,
 				FD5F35722774ED8000BBEA2E /* Data */,
 				FD930CE127736185000BA4CF /* Assets.xcassets */,
@@ -163,9 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD930CE027736183000BA4CF /* ContentView.swift in Sources */,
 				FD5F357727774B1200BBEA2E /* TicketList.swift in Sources */,
 				FD930CDE27736183000BA4CF /* FlightTicketBrowserApp.swift in Sources */,
+				FD5F357E2778A25600BBEA2E /* TicketListRowView.swift in Sources */,
+				FD5F357C2778A22400BBEA2E /* TicketListView.swift in Sources */,
 				FD5F357927774C0900BBEA2E /* TicketInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct FlightTicketBrowserApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TicketListView()
         }
     }
 }
