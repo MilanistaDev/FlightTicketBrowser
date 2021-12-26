@@ -13,7 +13,7 @@ struct TicketInfo: Decodable {
     let departureCode: String
     let destination: String
     let destinationCode: String
-    let datumOperator: String
+    let `operator`: String
     let flightNumber: String
     let terminal: String
     let gate: String
@@ -35,7 +35,7 @@ struct TicketInfo: Decodable {
         case departureCode = "departure_code"
         case destination
         case destinationCode = "destination_code"
-        case datumOperator = "operator"
+        case `operator` = "operator"
         case flightNumber = "flight_number"
         case terminal
         case gate
@@ -53,3 +53,17 @@ struct TicketInfo: Decodable {
         case price
     }
 }
+
+let sampleTicketData: [TicketInfo] = [
+    TicketInfo(departure: "TOKYO(HANEDA)", departureCode: "HND",
+               destination: "San Francisco", destinationCode: "SFO",
+               operator: "ANA", flightNumber: "NH108",
+               terminal: "3", gate: "105",
+               date: "June 4", boardingTime: "22:25",
+               departureTime: "22:55", arrivalTime: "15:20",
+               journeyTime: "9H 25M", seatNumber: "29A",
+               passenger: "John Smith", passportNumber: "TX0123456",
+               eTicketNumber: "0120 345 6789", bookingCode: "THANKU77",
+               payment: "VISA *** **77", price: "$1099.99")
+]
+
