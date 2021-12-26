@@ -12,7 +12,9 @@ struct TicketListView: View {
         NavigationView {
             List {
                 ForEach(0..<sampleTicketData.count) { index in
-                    TicketListRowView(ticketInfo: sampleTicketData[index])
+                    NavigationLink(destination: Text("Ticket detail")) {
+                        TicketListRowView(ticketInfo: sampleTicketData[index])
+                    }
                 }
             }
             .navigationTitle("Ticket List")
