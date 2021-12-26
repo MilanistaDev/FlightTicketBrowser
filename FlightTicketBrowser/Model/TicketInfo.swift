@@ -57,7 +57,7 @@ struct TicketInfo: Decodable {
 let sampleTicketData: [TicketInfo] = [
     TicketInfo(departure: "TOKYO(HANEDA)", departureCode: "HND",
                destination: "San Francisco", destinationCode: "SFO",
-               operator: "ANA", flightNumber: "NH108",
+               operator: "JAA", flightNumber: "JH108",
                terminal: "3", gate: "105",
                date: "June 4", boardingTime: "22:25",
                departureTime: "22:55", arrivalTime: "15:20",
