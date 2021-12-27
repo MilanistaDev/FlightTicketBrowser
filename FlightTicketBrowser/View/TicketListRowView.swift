@@ -21,7 +21,7 @@ struct TicketListRowView: View {
                     .fontWeight(.semibold)
                     .foregroundColor(.gray)
             }
-            .frame(width: 50.0)
+            .frame(width: 40.0, alignment: .leading)
             Divider()
             VStack(alignment: .leading) {
                 Text(ticketInfo.departureCode)

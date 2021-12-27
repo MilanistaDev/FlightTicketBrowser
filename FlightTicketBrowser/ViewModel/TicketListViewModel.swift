@@ -10,13 +10,13 @@ import Foundation
 final class TicketListViewModel: ObservableObject {
     
     @Published var ticketList: [TicketInfo] = []
-    let fetcher: TicketListFetcher
+    private let fetcher: TicketListFetcher
     
     init() {
         self.fetcher = TicketListFetcher()
     }
 
-    private func fetchTicketList() {
+    func fetchTicketList() {
         fetcher.fetch { [weak self] (data) in
             self?.ticketList = data
         }

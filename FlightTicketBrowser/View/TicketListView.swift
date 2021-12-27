@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct TicketListView: View {
+    
+    @StateObject private var viewModel = TicketListViewModel()
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(0..<sampleTicketData.count) { index in
+                ForEach(viewModel.ticketList.indices, id: \.self) { index in
                     NavigationLink(destination: Text("Ticket detail")) {
-                        TicketListRowView(ticketInfo: sampleTicketData[index])
+                        TicketListRowView(ticketInfo: viewModel.ticketList[index])
                     }
                 }
             }
             .navigationTitle("Ticket List")
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear {
+            viewModel.fetchTicketList()
         }
     }
 }
