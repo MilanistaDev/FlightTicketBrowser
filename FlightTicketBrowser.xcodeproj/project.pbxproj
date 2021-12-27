@@ -13,6 +13,7 @@
 		FD5F357C2778A22400BBEA2E /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F357B2778A22400BBEA2E /* TicketListView.swift */; };
 		FD5F357E2778A25600BBEA2E /* TicketListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F357D2778A25600BBEA2E /* TicketListRowView.swift */; };
 		FD5F358027797D1100BBEA2E /* TicketListFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F357F27797D1100BBEA2E /* TicketListFetcher.swift */; };
+		FD5F35832779854300BBEA2E /* TicketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F35822779854300BBEA2E /* TicketListViewModel.swift */; };
 		FD930CDE27736183000BA4CF /* FlightTicketBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */; };
 		FD930CE227736185000BA4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE127736185000BA4CF /* Assets.xcassets */; };
 		FD930CE527736185000BA4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE427736185000BA4CF /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		FD5F357B2778A22400BBEA2E /* TicketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListView.swift; sourceTree = "<group>"; };
 		FD5F357D2778A25600BBEA2E /* TicketListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListRowView.swift; sourceTree = "<group>"; };
 		FD5F357F27797D1100BBEA2E /* TicketListFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListFetcher.swift; sourceTree = "<group>"; };
+		FD5F35822779854300BBEA2E /* TicketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListViewModel.swift; sourceTree = "<group>"; };
 		FD930CDA27736183000BA4CF /* FlightTicketBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTicketBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketBrowserApp.swift; sourceTree = "<group>"; };
 		FD930CE127736185000BA4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FD5F35812779851D00BBEA2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD5F35822779854300BBEA2E /* TicketListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FD930CD127736183000BA4CF = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 			children = (
 				FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */,
 				FD5F357A2778A1FA00BBEA2E /* View */,
+				FD5F35812779851D00BBEA2E /* ViewModel */,
 				FD5F357527774AE200BBEA2E /* Model */,
 				FD5F35722774ED8000BBEA2E /* Data */,
 				FD930CE127736185000BA4CF /* Assets.xcassets */,
@@ -183,6 +194,7 @@
 				FD5F357E2778A25600BBEA2E /* TicketListRowView.swift in Sources */,
 				FD5F357C2778A22400BBEA2E /* TicketListView.swift in Sources */,
 				FD5F357927774C0900BBEA2E /* TicketInfo.swift in Sources */,
+				FD5F35832779854300BBEA2E /* TicketListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
