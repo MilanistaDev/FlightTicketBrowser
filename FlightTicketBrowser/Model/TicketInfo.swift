@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 // MARK: - TicketInfo
 struct TicketInfo: Decodable {
+    let flightType: FlightType
     let departure: String
     let departureCode: String
     let destination: String
@@ -31,6 +33,7 @@ struct TicketInfo: Decodable {
     let price: String
 
     enum CodingKeys: String, CodingKey {
+        case flightType = "flight_type"
         case departure
         case departureCode = "departure_code"
         case destination
@@ -54,8 +57,23 @@ struct TicketInfo: Decodable {
     }
 }
 
+enum FlightType: String, Decodable {
+    case international = "International"
+    case domestic = "Domestic"
+    
+    var themeColor: Color {
+        switch self {
+        case .international:
+            return .red
+        case .domestic:
+            return .indigo
+        }
+    }
+}
+
 let sampleTicketData: [TicketInfo] = [
-    TicketInfo(departure: "TOKYO(HANEDA)", departureCode: "HND",
+    TicketInfo(flightType: .international,
+               departure: "TOKYO(HANEDA)", departureCode: "HND",
                destination: "San Francisco", destinationCode: "SFO",
                operator: "JAA", flightNumber: "JH108",
                terminal: "3", gate: "105",

@@ -2,6 +2,7 @@
     "title": "Ticket List",
     "data": [
         {
+            "flight_type": "International",
             "departure": "TOKYO(HANEDA)",
             "departure_code": "HND",
             "destination": "San Francisco",
@@ -20,10 +21,11 @@
             "passport_number": "TX0123456",
             "e_ticket_number": "0120 345 6789",
             "booking_code": "THANKU77",
-            "payment": "VISA *** **77",
+            "payment": "VIXA *** **77",
             "price": "$1099.99"
         },
         {
+            "flight_type": "International",
             "departure": "SAN JOSE",
             "departure_code": "SJC",
             "destination": "TOKYO(NARITA)",
@@ -42,10 +44,11 @@
             "passport_number": "TX0123456",
             "e_ticket_number": "0123 456 7890",
             "booking_code": "THANKU39",
-            "payment": "VISA *** **77",
+            "payment": "VIXA *** **77",
             "price": "$999.99"
         },
         {
+            "flight_type": "Domestic",
             "departure": "TOKYO(HANEDA)",
             "departure_code": "HND",
             "destination": "FUKUOKA",
@@ -54,7 +57,7 @@
             "flight_number": "JAA261",
             "terminal": "2",
             "gate": "66",
-            "date": "JUNE 20",
+            "date": "June 20",
             "boarding_time": "15:30",
             "departure_time": "15:50",
             "arrival_time": "17:45",
@@ -64,10 +67,11 @@
             "passport_number": "-",
             "e_ticket_number": "1234 567 8901",
             "booking_code": "AR1GA10",
-            "payment": "JCB *** **49",
+            "payment": "JBC **** **49",
             "price": "$129.99"
         },
         {
+            "flight_type": "Domestic",
             "departure": "FUKUOKA",
             "departure_code": "FUK",
             "destination": "TOKYO(HANEDA)",
@@ -76,7 +80,7 @@
             "flight_number": "JAA252",
             "terminal": "D",
             "gate": "TBD",
-            "date": "JUNE 27",
+            "date": "June 27",
             "boarding_time": "12:10",
             "departure_time": "12:25",
             "arrival_time": "14:10",
@@ -86,7 +90,7 @@
             "passport_number": "-",
             "e_ticket_number": "2345 678 9012",
             "booking_code": "AR1GAT04",
-            "payment": "JCB *** **49",
+            "payment": "JBC *** **49",
             "price": "$109.99"
         }
     ]

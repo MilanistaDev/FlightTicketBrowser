@@ -37,6 +37,7 @@ struct TicketListRowView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 20.0)
+                .foregroundColor(ticketInfo.flightType.themeColor)
             Spacer()
             VStack(alignment: .trailing) {
                 Text(ticketInfo.destinationCode)
