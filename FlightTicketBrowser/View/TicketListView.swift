@@ -14,10 +14,14 @@ struct TicketListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.ticketList.indices, id: \.self) { index in
-                    NavigationLink(destination: Text("Ticket detail")) {
-                        TicketListRowView(ticketInfo: viewModel.ticketList[index])
+                Section {
+                    ForEach(viewModel.ticketList.indices, id: \.self) { index in
+                        NavigationLink(destination: Text("Ticket detail")) {
+                            TicketListRowView(ticketInfo: viewModel.ticketList[index])
+                        }
                     }
+                } footer: {
+                    TicketListFooterView()
                 }
             }
             .navigationTitle("Ticket List")

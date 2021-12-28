@@ -56,6 +56,8 @@ struct TicketListRowView: View {
 struct TicketListRowView_Previews: PreviewProvider {
     static var previews: some View {
         TicketListRowView(ticketInfo: sampleTicketData[0])
+            .frame(height: 80.0)
+            .padding(.horizontal)
             .previewLayout(PreviewLayout.sizeThatFits)
     }
 }

@@ -57,7 +57,7 @@ struct TicketInfo: Decodable {
     }
 }
 
-enum FlightType: String, Decodable {
+enum FlightType: String, Decodable, CaseIterable {
     case international = "International"
     case domestic = "Domestic"
     
