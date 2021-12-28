@@ -16,7 +16,7 @@ struct TicketListView: View {
             List {
                 Section {
                     ForEach(viewModel.ticketList.indices, id: \.self) { index in
-                        NavigationLink(destination: Text("Ticket detail")) {
+                        NavigationLink(destination: TicketDetailView(ticketInfo: viewModel.ticketList[index])) {
                             TicketListRowView(ticketInfo: viewModel.ticketList[index])
                         }
                     }
