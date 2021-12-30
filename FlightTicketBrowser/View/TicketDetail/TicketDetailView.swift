@@ -12,7 +12,13 @@ struct TicketDetailView: View {
     let ticketInfo: TicketInfo
     
     var body: some View {
-        Text(ticketInfo.destination)
+        VStack(spacing: .zero) {
+            TicketDetailTopView(ticketInfo: ticketInfo)            
+            Spacer()
+        }
+        .padding(.all, 20.0)
+        .background(Color(UIColor.systemGroupedBackground))
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
