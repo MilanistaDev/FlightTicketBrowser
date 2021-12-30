@@ -18,6 +18,7 @@
 		FD5F3589277BD1E200BBEA2E /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3588277BD1E200BBEA2E /* TicketDetailView.swift */; };
 		FD5F358B277DAB1500BBEA2E /* TicketDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F358A277DAB1500BBEA2E /* TicketDetailTopView.swift */; };
 		FD5F358E277DB2C200BBEA2E /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F358D277DB2C200BBEA2E /* RoundedCorner.swift */; };
+		FD5F3590277DB5CA00BBEA2E /* LREdgeCutShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F358F277DB5CA00BBEA2E /* LREdgeCutShapeView.swift */; };
 		FD930CDE27736183000BA4CF /* FlightTicketBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */; };
 		FD930CE227736185000BA4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE127736185000BA4CF /* Assets.xcassets */; };
 		FD930CE527736185000BA4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE427736185000BA4CF /* Preview Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		FD5F3588277BD1E200BBEA2E /* TicketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailView.swift; sourceTree = "<group>"; };
 		FD5F358A277DAB1500BBEA2E /* TicketDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailTopView.swift; sourceTree = "<group>"; };
 		FD5F358D277DB2C200BBEA2E /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		FD5F358F277DB5CA00BBEA2E /* LREdgeCutShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LREdgeCutShapeView.swift; sourceTree = "<group>"; };
 		FD930CDA27736183000BA4CF /* FlightTicketBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTicketBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketBrowserApp.swift; sourceTree = "<group>"; };
 		FD930CE127736185000BA4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				FD5F358D277DB2C200BBEA2E /* RoundedCorner.swift */,
+				FD5F358F277DB5CA00BBEA2E /* LREdgeCutShapeView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				FD5F357927774C0900BBEA2E /* TicketInfo.swift in Sources */,
 				FD5F35832779854300BBEA2E /* TicketListViewModel.swift in Sources */,
 				FD5F358E277DB2C200BBEA2E /* RoundedCorner.swift in Sources */,
+				FD5F3590277DB5CA00BBEA2E /* LREdgeCutShapeView.swift in Sources */,
 				FD5F3585277BCED400BBEA2E /* TicketListFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

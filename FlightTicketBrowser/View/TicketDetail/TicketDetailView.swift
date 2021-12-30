@@ -12,11 +12,19 @@ struct TicketDetailView: View {
     let ticketInfo: TicketInfo
     
     var body: some View {
-        VStack(spacing: .zero) {
-            TicketDetailTopView(ticketInfo: ticketInfo)            
-            Spacer()
+        ScrollView {
+            VStack(spacing: .zero) {
+                TicketDetailTopView(ticketInfo: ticketInfo)
+                ZStack {
+                    LREdgeCutShapeView()
+                        .fill(Color(UIColor.tertiarySystemBackground), style: FillStyle(eoFill: false, antialiased: false))
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 24.0)
+                }
+                Spacer()
+            }
+            .padding(.all, 20.0)
         }
-        .padding(.all, 20.0)
         .background(Color(UIColor.systemGroupedBackground))
         .navigationBarTitleDisplayMode(.inline)
     }
