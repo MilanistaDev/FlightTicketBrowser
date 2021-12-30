@@ -63,6 +63,7 @@ struct TicketDetailTopView: View {
         .padding(.all, 20.0)
         .frame(maxWidth: .infinity)
         .background(Color(UIColor.tertiarySystemBackground))
+        .cornerRadius(12.0, corners: [.topLeft, .topRight])
     }
 }
 
