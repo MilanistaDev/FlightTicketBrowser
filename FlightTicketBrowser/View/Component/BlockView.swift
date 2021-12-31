@@ -11,6 +11,7 @@ struct BlockView: View {
     
     let key: String
     let value: String
+    let rows: Int
     
     var body: some View {
         VStack {
@@ -21,12 +22,13 @@ struct BlockView: View {
                 .fontWeight(.semibold)
                 .foregroundColor(.gray)
         }
-        .frame(width: (UIScreen.main.bounds.width - 80) / 3)
+        .frame(width: (UIScreen.main.bounds.width - 80) / CGFloat(rows))
     }
 }
 
 struct BlockView_Previews: PreviewProvider {
     static var previews: some View {
-        BlockView(key: "FLIGHT NUM", value: "JAA777")
+        BlockView(key: "FLIGHT NUM", value: "JAA777", rows: 3)
+            .previewLayout(PreviewLayout.sizeThatFits)
     }
 }

@@ -12,18 +12,26 @@ struct TicketDetailMainView: View {
     let ticketInfo: TicketInfo
     
     var body: some View {
-        VStack {
+        VStack(spacing: 16.0) {
             HStack(spacing: .zero) {
-                BlockView(key: "FLIGHT NUM", value: ticketInfo.flightNumber)
+                BlockView(key: "FLIGHT NUM", value: ticketInfo.flightNumber, rows: 3)
                 Divider()
-                BlockView(key: "TERMINAL", value: ticketInfo.terminal)
+                BlockView(key: "TERMINAL", value: ticketInfo.terminal, rows: 3)
                 Divider()
-                BlockView(key: "GATE", value: ticketInfo.gate)
+                BlockView(key: "GATE", value: ticketInfo.gate, rows: 3)
             }
             Divider()
+            HStack(spacing: .zero) {
+                BlockView(key: "DATE", value: ticketInfo.date, rows: 3)
+                Divider()
+                BlockView(key: "DEPARTURE TIME", value: ticketInfo.departureTime, rows: 3)
+                Divider()
+                BlockView(key: "SEAT", value: ticketInfo.seatNumber, rows: 3)
+            }
         }
         .padding(.horizontal, 20.0)
-        .padding(.vertical, 12.0)
+        .padding(.top, 12.0)
+        .padding(.bottom, 20.0)
         .frame(maxWidth: .infinity)
         .background(Color(UIColor.tertiarySystemBackground))
         .cornerRadius(12.0, corners: [.bottomLeft, .bottomRight])
