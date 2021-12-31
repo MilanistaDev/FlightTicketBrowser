@@ -21,6 +21,7 @@
 		FD5F3590277DB5CA00BBEA2E /* LREdgeCutShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F358F277DB5CA00BBEA2E /* LREdgeCutShapeView.swift */; };
 		FD5F3592277DF7A400BBEA2E /* TicketDetailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3591277DF7A400BBEA2E /* TicketDetailMainView.swift */; };
 		FD5F3594277EE2D900BBEA2E /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3593277EE2D900BBEA2E /* BlockView.swift */; };
+		FD5F3597277EEB5600BBEA2E /* BarcodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3596277EEB5600BBEA2E /* BarcodeGenerator.swift */; };
 		FD930CDE27736183000BA4CF /* FlightTicketBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */; };
 		FD930CE227736185000BA4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE127736185000BA4CF /* Assets.xcassets */; };
 		FD930CE527736185000BA4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE427736185000BA4CF /* Preview Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		FD5F358F277DB5CA00BBEA2E /* LREdgeCutShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LREdgeCutShapeView.swift; sourceTree = "<group>"; };
 		FD5F3591277DF7A400BBEA2E /* TicketDetailMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailMainView.swift; sourceTree = "<group>"; };
 		FD5F3593277EE2D900BBEA2E /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		FD5F3596277EEB5600BBEA2E /* BarcodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeGenerator.swift; sourceTree = "<group>"; };
 		FD930CDA27736183000BA4CF /* FlightTicketBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTicketBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketBrowserApp.swift; sourceTree = "<group>"; };
 		FD930CE127736185000BA4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		FD5F3595277EEAEB00BBEA2E /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				FD5F3596277EEB5600BBEA2E /* BarcodeGenerator.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 		FD930CD127736183000BA4CF = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 				FD5F357A2778A1FA00BBEA2E /* View */,
 				FD5F35812779851D00BBEA2E /* ViewModel */,
 				FD5F357527774AE200BBEA2E /* Model */,
+				FD5F3595277EEAEB00BBEA2E /* Feature */,
 				FD5F35722774ED8000BBEA2E /* Data */,
 				FD930CE127736185000BA4CF /* Assets.xcassets */,
 				FD930CE327736185000BA4CF /* Preview Content */,
@@ -234,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD5F357727774B1200BBEA2E /* TicketList.swift in Sources */,
+				FD5F3597277EEB5600BBEA2E /* BarcodeGenerator.swift in Sources */,
 				FD5F358027797D1100BBEA2E /* TicketListFetcher.swift in Sources */,
 				FD5F3592277DF7A400BBEA2E /* TicketDetailMainView.swift in Sources */,
 				FD5F3589277BD1E200BBEA2E /* TicketDetailView.swift in Sources */,
