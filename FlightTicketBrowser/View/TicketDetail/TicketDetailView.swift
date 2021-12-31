@@ -21,7 +21,7 @@ struct TicketDetailView: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 24.0)
                 }
-                Spacer()
+                TicketDetailMainView(ticketInfo: ticketInfo)
             }
             .padding(.all, 20.0)
         }
