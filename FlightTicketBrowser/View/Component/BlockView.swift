@@ -14,7 +14,7 @@ struct BlockView: View {
     let rows: Int
     
     var body: some View {
-        VStack {
+        VStack(spacing: 6.0) {
             Text(value)
                 .font(.custom("Futura-Medium", size: 17.0, relativeTo: .headline))
             Text(key)
