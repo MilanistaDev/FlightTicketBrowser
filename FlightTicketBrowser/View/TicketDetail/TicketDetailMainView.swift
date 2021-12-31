@@ -34,6 +34,12 @@ struct TicketDetailMainView: View {
                 Divider()
                 BlockView(key: "PASSPORT", value: ticketInfo.passportNumber, rows: 2)
             }
+            Divider()
+            HStack(spacing: .zero) {
+                BlockView(key: "E-TICKET NUM", value: ticketInfo.eTicketNumber, rows: 2)
+                Divider()
+                BlockView(key: "BOOKING CODE", value: ticketInfo.bookingCode, rows: 2)
+            }
         }
         .padding(.horizontal, 20.0)
         .padding(.top, 12.0)
