@@ -22,6 +22,7 @@
 		FD5F3592277DF7A400BBEA2E /* TicketDetailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3591277DF7A400BBEA2E /* TicketDetailMainView.swift */; };
 		FD5F3594277EE2D900BBEA2E /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3593277EE2D900BBEA2E /* BlockView.swift */; };
 		FD5F3597277EEB5600BBEA2E /* BarcodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F3596277EEB5600BBEA2E /* BarcodeGenerator.swift */; };
+		FD5F35992780860600BBEA2E /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5F35982780860600BBEA2E /* LineShape.swift */; };
 		FD930CDE27736183000BA4CF /* FlightTicketBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */; };
 		FD930CE227736185000BA4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE127736185000BA4CF /* Assets.xcassets */; };
 		FD930CE527736185000BA4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE427736185000BA4CF /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		FD5F3591277DF7A400BBEA2E /* TicketDetailMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailMainView.swift; sourceTree = "<group>"; };
 		FD5F3593277EE2D900BBEA2E /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 		FD5F3596277EEB5600BBEA2E /* BarcodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeGenerator.swift; sourceTree = "<group>"; };
+		FD5F35982780860600BBEA2E /* LineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
 		FD930CDA27736183000BA4CF /* FlightTicketBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTicketBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD930CDD27736183000BA4CF /* FlightTicketBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTicketBrowserApp.swift; sourceTree = "<group>"; };
 		FD930CE127736185000BA4CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				FD5F358D277DB2C200BBEA2E /* RoundedCorner.swift */,
 				FD5F358F277DB5CA00BBEA2E /* LREdgeCutShapeView.swift */,
 				FD5F3593277EE2D900BBEA2E /* BlockView.swift */,
+				FD5F35982780860600BBEA2E /* LineShape.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				FD5F357727774B1200BBEA2E /* TicketList.swift in Sources */,
 				FD5F3597277EEB5600BBEA2E /* BarcodeGenerator.swift in Sources */,
 				FD5F358027797D1100BBEA2E /* TicketListFetcher.swift in Sources */,
+				FD5F35992780860600BBEA2E /* LineShape.swift in Sources */,
 				FD5F3592277DF7A400BBEA2E /* TicketDetailMainView.swift in Sources */,
 				FD5F3589277BD1E200BBEA2E /* TicketDetailView.swift in Sources */,
 				FD5F3594277EE2D900BBEA2E /* BlockView.swift in Sources */,
