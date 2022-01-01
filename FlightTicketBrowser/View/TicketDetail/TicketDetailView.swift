@@ -27,6 +27,7 @@ struct TicketDetailView: View {
         }
         .background(Color(UIColor.systemGroupedBackground))
         .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Ticket Info")
     }
 }
 
