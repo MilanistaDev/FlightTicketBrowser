@@ -10,6 +10,7 @@ import SwiftUI
 struct TicketDetailView: View {
     
     let ticketInfo: TicketInfo
+    @State private var isShowModal = false
     
     var body: some View {
         ScrollView {
@@ -32,6 +33,26 @@ struct TicketDetailView: View {
         .background(Color(UIColor.systemGroupedBackground))
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Ticket Info")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    isShowModal.toggle()
+                } label: {
+                    VStack(spacing: .zero) {
+                        Image(systemName: "qrcode")
+                            .resizable()
+                            .scaledToFit()
+                        Text("PASS")
+                            .font(.system(size: 10.0))
+                            .fontWeight(.semibold)
+                    }
+                    .foregroundColor(.primary)
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $isShowModal) {
+            Text("🇲🇼")
+        }
     }
 }
 
