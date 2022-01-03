@@ -22,7 +22,7 @@ struct TicketDetailView: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 24.0)
                     LineShape()
-                        .stroke(Color.gray, style: StrokeStyle(lineWidth: 1.0, dash: [5]))
+                        .stroke(Color(uiColor: .lightGray), style: StrokeStyle(lineWidth: 1.0, dash: [5]))
                         .frame(height: 1.0)
                         .padding(.horizontal, 20.0)
                 }
