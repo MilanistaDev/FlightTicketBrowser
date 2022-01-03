@@ -51,7 +51,7 @@ struct TicketDetailView: View {
             }
         }
         .fullScreenCover(isPresented: $isShowModal) {
-            Text("🇲🇼")
+            BoardingPassView(ticketInfo: ticketInfo)
         }
     }
 }
