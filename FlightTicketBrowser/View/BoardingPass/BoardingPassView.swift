@@ -14,20 +14,28 @@ struct BoardingPassView: View {
     
     var body: some View {
         NavigationView {
-            Text(ticketInfo.price)
-                .background(Color(UIColor.systemGroupedBackground))
-                .navigationTitle("Boarding Pass")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "xmark")
-                                .foregroundColor(.primary)
-                        }
+            ScrollView {
+                VStack(spacing: .zero) {
+                    BoardingPassTopView(ticketInfo: ticketInfo)
+                    Spacer()
+                }
+                .padding(.horizontal, 20.0)
+                .padding(.top, 32.0)
+                .cornerRadius(16.0)
+            }
+            .background(Color(UIColor.systemGroupedBackground))
+            .navigationTitle("Boarding Pass")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .foregroundColor(.primary)
                     }
                 }
+            }
         }
     }
 }
