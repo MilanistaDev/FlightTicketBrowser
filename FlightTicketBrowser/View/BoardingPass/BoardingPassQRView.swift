@@ -10,6 +10,8 @@ import SwiftUI
 struct BoardingPassQRView: View {
     
     let codeStr: String
+    @State private var isTouched = false
+    @State private var brightness = 0.0
     
     var body: some View {
         // It is not displayed for some reason. Maybe bug.
@@ -22,6 +24,16 @@ struct BoardingPassQRView: View {
             .padding(.horizontal, 50.0)
             .background(Color(uiColor: .tertiarySystemBackground))
             .cornerRadius(16.0, corners: [.bottomLeft, .bottomRight])
+            .onAppear(perform: {
+                brightness = UIScreen.main.brightness
+            })
+            .onDisappear(perform: {
+                UIScreen.main.brightness = brightness
+            })
+            .onTapGesture {
+                isTouched.toggle()
+                UIScreen.main.brightness = isTouched ? 1.0: brightness
+            }
     }
 }
 
