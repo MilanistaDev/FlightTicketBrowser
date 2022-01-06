@@ -17,11 +17,10 @@ struct BoardingPassView: View {
             ScrollView {
                 VStack(spacing: .zero) {
                     BoardingPassTopView(ticketInfo: ticketInfo)
-                    Spacer()
+                    BoardingPassMainView(ticketInfo: ticketInfo)
                 }
                 .padding(.horizontal, 20.0)
                 .padding(.top, 32.0)
-                .cornerRadius(16.0)
             }
             .background(Color(UIColor.systemGroupedBackground))
             .navigationTitle("Boarding Pass")
