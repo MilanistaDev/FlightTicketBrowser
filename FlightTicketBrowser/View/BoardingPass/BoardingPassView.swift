@@ -18,6 +18,7 @@ struct BoardingPassView: View {
                 VStack(spacing: .zero) {
                     BoardingPassTopView(ticketInfo: ticketInfo)
                     BoardingPassMainView(ticketInfo: ticketInfo)
+                    BoardingPassQRView(codeStr: ticketInfo.eTicketNumber +  ticketInfo.bookingCode)
                 }
                 .padding(.horizontal, 20.0)
                 .padding(.top, 32.0)

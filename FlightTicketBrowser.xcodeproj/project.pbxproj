@@ -29,6 +29,7 @@
 		FD930CE527736185000BA4CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD930CE427736185000BA4CF /* Preview Assets.xcassets */; };
 		FDEEFA942785D3CA00EC062E /* BoardingPassTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFA932785D3CA00EC062E /* BoardingPassTopView.swift */; };
 		FDEEFA962786C37B00EC062E /* BoardingPassMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFA952786C37B00EC062E /* BoardingPassMainView.swift */; };
+		FDEEFA982786C6AD00EC062E /* BoardingPassQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFA972786C6AD00EC062E /* BoardingPassQRView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		FD930CE427736185000BA4CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDEEFA932785D3CA00EC062E /* BoardingPassTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassTopView.swift; sourceTree = "<group>"; };
 		FDEEFA952786C37B00EC062E /* BoardingPassMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassMainView.swift; sourceTree = "<group>"; };
+		FDEEFA972786C6AD00EC062E /* BoardingPassQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassQRView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				FD5F359B2782969700BBEA2E /* BoardingPassView.swift */,
 				FDEEFA932785D3CA00EC062E /* BoardingPassTopView.swift */,
 				FDEEFA952786C37B00EC062E /* BoardingPassMainView.swift */,
+				FDEEFA972786C6AD00EC062E /* BoardingPassQRView.swift */,
 			);
 			path = BoardingPass;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				FD5F358B277DAB1500BBEA2E /* TicketDetailTopView.swift in Sources */,
 				FD930CDE27736183000BA4CF /* FlightTicketBrowserApp.swift in Sources */,
 				FD5F357E2778A25600BBEA2E /* TicketListRowView.swift in Sources */,
+				FDEEFA982786C6AD00EC062E /* BoardingPassQRView.swift in Sources */,
 				FDEEFA962786C37B00EC062E /* BoardingPassMainView.swift in Sources */,
 				FD5F357C2778A22400BBEA2E /* TicketListView.swift in Sources */,
 				FDEEFA942785D3CA00EC062E /* BoardingPassTopView.swift in Sources */,

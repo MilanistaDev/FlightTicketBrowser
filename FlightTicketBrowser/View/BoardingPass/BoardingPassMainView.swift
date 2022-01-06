@@ -27,7 +27,7 @@ struct BoardingPassMainView: View {
                 BlockView(key: "SEAT", value: ticketInfo.seatNumber, rows: 3)
             }
         }
-        .padding(.vertical, 20.0)
+        .padding(.top, 20.0)
         .background(Color(uiColor: .tertiarySystemBackground))
     }
 }
