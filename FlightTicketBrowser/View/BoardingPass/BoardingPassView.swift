@@ -15,13 +15,18 @@ struct BoardingPassView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(spacing: .zero) {
-                    BoardingPassTopView(ticketInfo: ticketInfo)
-                    BoardingPassMainView(ticketInfo: ticketInfo)
-                    BoardingPassQRView(codeStr: ticketInfo.eTicketNumber +  ticketInfo.bookingCode)
+                VStack {
+                    VStack(spacing: .zero) {
+                        BoardingPassTopView(ticketInfo: ticketInfo)
+                        BoardingPassMainView(ticketInfo: ticketInfo)
+                        BoardingPassQRView(codeStr: ticketInfo.eTicketNumber +  ticketInfo.bookingCode)
+                    }
+                    .padding(.top, 32.0)
+                    Text("⚠︎ The boarding start time may change.\n Please come to the gate with plenty of time for a smooth takeoff.")
+                        .font(.caption2)
+                        .foregroundColor(.gray)
                 }
                 .padding(.horizontal, 20.0)
-                .padding(.top, 32.0)
             }
             .background(Color(UIColor.systemGroupedBackground))
             .navigationTitle("Boarding Pass")
