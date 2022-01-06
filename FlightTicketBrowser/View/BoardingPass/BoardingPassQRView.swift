@@ -12,10 +12,14 @@ struct BoardingPassQRView: View {
     let codeStr: String
     
     var body: some View {
-        Image(systemName: "qrcode")
+        // It is not displayed for some reason. Maybe bug.
+        // Image(uiImage: QRCodeGenerator.generate(qrStr: codeStr))
+        Image("qr_boarding_pass")
             .resizable()
             .scaledToFit()
-            .padding(.all, 50.0)
+            .padding(.top, 20.0)
+            .padding(.bottom, 40.0)
+            .padding(.horizontal, 50.0)
             .background(Color(uiColor: .tertiarySystemBackground))
             .cornerRadius(16.0, corners: [.bottomLeft, .bottomRight])
     }

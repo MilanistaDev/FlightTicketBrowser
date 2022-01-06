@@ -30,6 +30,7 @@
 		FDEEFA942785D3CA00EC062E /* BoardingPassTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFA932785D3CA00EC062E /* BoardingPassTopView.swift */; };
 		FDEEFA962786C37B00EC062E /* BoardingPassMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFA952786C37B00EC062E /* BoardingPassMainView.swift */; };
 		FDEEFA982786C6AD00EC062E /* BoardingPassQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFA972786C6AD00EC062E /* BoardingPassQRView.swift */; };
+		FDEEFA9A2786C95400EC062E /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEEFA992786C95400EC062E /* QRCodeGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		FDEEFA932785D3CA00EC062E /* BoardingPassTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassTopView.swift; sourceTree = "<group>"; };
 		FDEEFA952786C37B00EC062E /* BoardingPassMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassMainView.swift; sourceTree = "<group>"; };
 		FDEEFA972786C6AD00EC062E /* BoardingPassQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassQRView.swift; sourceTree = "<group>"; };
+		FDEEFA992786C95400EC062E /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				FD5F3596277EEB5600BBEA2E /* BarcodeGenerator.swift */,
+				FDEEFA992786C95400EC062E /* QRCodeGenerator.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				FDEEFA982786C6AD00EC062E /* BoardingPassQRView.swift in Sources */,
 				FDEEFA962786C37B00EC062E /* BoardingPassMainView.swift in Sources */,
 				FD5F357C2778A22400BBEA2E /* TicketListView.swift in Sources */,
+				FDEEFA9A2786C95400EC062E /* QRCodeGenerator.swift in Sources */,
 				FDEEFA942785D3CA00EC062E /* BoardingPassTopView.swift in Sources */,
 				FD5F359C2782969700BBEA2E /* BoardingPassView.swift in Sources */,
 				FD5F357927774C0900BBEA2E /* TicketInfo.swift in Sources */,
