@@ -44,7 +44,7 @@ struct BoardingPassTopView: View {
         }
         .padding()
         .foregroundColor(.white)
-        .background(Color.orange)
+        .background(ticketInfo.flightType.themeColor)
         .cornerRadius(16.0, corners: [.topLeft, .topRight])
     }
 }

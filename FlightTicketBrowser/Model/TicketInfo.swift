@@ -5,7 +5,6 @@
 //  Created by Takuya Aso on 2021/12/25.
 //
 
-import Foundation
 import SwiftUI
 
 // MARK: - TicketInfo
