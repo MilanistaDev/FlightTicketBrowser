@@ -3,6 +3,7 @@
 This app is a SwiftUI sample app for flight ticket browser.  
 Even if the barcode and QR code are generated,   
 it seems that they cannot be displayed on the SwiftUI, so a fixed image is displayed.  
+=> **Fixed QRCode Generation. (June 21, 2022)**  
 User can adjust the brightness of the screen by tapping the QR code.  
 Flight information is fiction.  
 
@@ -40,6 +41,7 @@ Flight information is fiction.
 * How to use `Path`
   - Cut off of leading and trailing edge
   - Dash Line
+  - QRCode generation
 
 ## Article
 
@@ -51,10 +53,8 @@ Please feel free to contact us if you find a bug or have any feedback.
 Suggestions for adding functions and code corrections are also welcome.
 
 ```swift
-let name = "Takuya Aso" 
+let name = "Takuya Aso"
 let email = "milanista224" + "@" + "icloud.com"
 let profession = "iOS Engineer"
 let location = "Tokyo"
 ```
-
-
