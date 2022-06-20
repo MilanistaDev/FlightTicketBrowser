@@ -14,10 +14,12 @@ struct BoardingPassQRView: View {
     @State private var brightness = 0.0
     
     var body: some View {
-        // It is not displayed for some reason. Maybe bug.
-        // Image(uiImage: QRCodeGenerator.generate(qrStr: codeStr))
-        Image("qr_boarding_pass")
+        // Pattern 1
+        // Image(uiImage: UIImage(data: QRCodeGenerator.generate(qrStr: codeStr)!)!)
+        // Pattern 2 (IMO: Better way)
+        Image(uiImage: QRCodeGenerator.generateNew(qrStr: codeStr)!)
             .resizable()
+            .interpolation(.none)
             .scaledToFit()
             .padding(.top, 20.0)
             .padding(.bottom, 40.0)
