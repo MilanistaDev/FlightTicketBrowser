@@ -46,14 +46,14 @@ struct TicketDetailMainView: View {
                 Divider()
                 BlockView(key: "PRICE", value: ticketInfo.price, rows: 2)
             }
-            // It is not displayed for some reason. Maybe bug,
-//            Image(uiImage: BarcodeGenerator.generate(barcodeStr: ticketInfo.eTicketNumber + ticketInfo.bookingCode))
-//                .resizable()
-//                .scaledToFit()
-//                .frame(height: 32.0)
-            Image("barcode")
+            // Pattern 1
+            //Image(uiImage: UIImage(data: BarcodeGenerator.generate(barcodeStr: ticketInfo.eTicketNumber + ticketInfo.bookingCode)!)!)
+            // Pattern 2 (IMO: Better way)
+            Image(uiImage: BarcodeGenerator.generateNew(barcodeStr: ticketInfo.eTicketNumber + ticketInfo.bookingCode)!)
                 .resizable()
-                .frame(width: UIScreen.main.bounds.width - 80.0 ,height: 24.0)
+                .interpolation(.none)
+                .scaledToFill()
+                .frame(height: 24.0)
                 .padding(.vertical, 20.0)
         }
         .padding(.horizontal, 20.0)
