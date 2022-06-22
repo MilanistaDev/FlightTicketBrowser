@@ -47,8 +47,11 @@ struct TicketDetailMainView: View {
                 BlockView(key: "PRICE", value: ticketInfo.price, rows: 2)
             }
             // Pattern 1
-            Image(uiImage: UIImage(data: BarcodeGenerator.generate(barcodeStr: ticketInfo.eTicketNumber + ticketInfo.bookingCode)!)!)
+            //Image(uiImage: UIImage(data: BarcodeGenerator.generate(barcodeStr: ticketInfo.eTicketNumber + ticketInfo.bookingCode)!)!)
+            // Pattern 2 (IMO: Better way)
+            Image(uiImage: BarcodeGenerator.generateNew(barcodeStr: ticketInfo.eTicketNumber + ticketInfo.bookingCode)!)
                 .resizable()
+                .interpolation(.none)
                 .scaledToFill()
                 .frame(height: 24.0)
                 .padding(.vertical, 20.0)
