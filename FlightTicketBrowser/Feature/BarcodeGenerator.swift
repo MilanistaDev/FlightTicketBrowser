@@ -8,20 +8,16 @@
 import SwiftUI
 
 final class BarcodeGenerator {
-    /// バーコードを生成しUIImage型で返却する
+    /// バーコードを生成しData型で返却する
     ///
     /// - Parameter barcodeStr: バーコードを生成したい文字列
-    /// - Returns: バーコードをUIImageにしたものを返す
-    class func generate(barcodeStr: String) -> UIImage {
+    /// - Returns: バーコードをData型にしたものを返す
+    class func generate(barcodeStr: String) -> Data? {
         let data = barcodeStr.data(using: String.Encoding.ascii)
-        if let filter = CIFilter(name: "CICode128BarcodeGenerator") {
-            filter.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransform(scaleX: 3, y: 3)
-            
-            if let output = filter.outputImage?.transformed(by: transform) {
-                return UIImage(ciImage: output)
-            }
-        }
-        return UIImage()
+        let barCodeFilter = CIFilter(name: "CICode128BarcodeGenerator",
+                                     parameters: ["inputMessage": data!])!
+        let transform = CGAffineTransform(scaleX: 3, y: 3)
+        let barCodeImage = barCodeFilter.outputImage!.transformed(by: transform)
+        return UIImage(ciImage: barCodeImage).pngData()
     }
 }
